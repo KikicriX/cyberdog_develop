@@ -30,5 +30,13 @@ bash src/cyberdog_simulator/cyberdog_gazebo/script/launchvisual.sh
 source /opt/ros/galactic/setup.bash
 source /home/cyberdog_ws/install/setup.bash
 ```
+启动相机画面：
+```bash
+export QT_X11_NO_MITSHM=1
+export GDK_DISABLE_SHM=1
 
+ros2 run image_tools showimage --ros-args \
+  -p reliability:=best_effort \
+  --remap image:=/rgb_camera/rgb_camera_sensor/image_raw
+```
 
