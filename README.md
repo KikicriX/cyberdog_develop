@@ -39,6 +39,8 @@ pip3 install lcm toml
 cd /home/cyberdog_sim
 bash src/cyberdog_simulator/cyberdog_gazebo/script/launchgazebo.sh
 ```
+如果需要带激光雷达启动需要：
+bash src/cyberdog_simulator/cyberdog_gazebo/script/launchgazebo_lidar.sh
 
 ### 2.2 启动控制器
 
